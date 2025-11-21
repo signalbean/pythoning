@@ -5,8 +5,9 @@ class HealthBar:
 
     colors = {
         "red": "\033[91m",
-        "purple": "\033[95m",
+        "green": "\033[92m",
         "blue": "\033[34m",
+        "purple": "\033[95m",
         "brown": "\033[33m",
         "yellow": "\033[93m",
         "grey": "\033[37m",
