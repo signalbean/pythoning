@@ -7,10 +7,10 @@ class Weapon:
         self.val = val
 
 # default option
-FISTS = Weapon("Fists", "blunt", 2, 0)
+fists = Weapon("Fists", "blunt", 2, 0)
 
 # melee weapon
-IRON_SWORD = Weapon("Iron Sword", "sharp", 5, 10)
+iron_sword = Weapon("Iron Sword", "sharp", 5, 10)
 
 # ranged weapon with moderate damage
-SHORT_BOW = Weapon("Short Bow", "ranged", 4, 8)
+short_bow = Weapon("Short Bow", "ranged", 4, 8)

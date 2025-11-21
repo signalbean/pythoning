@@ -1,10 +1,10 @@
 from character import Hero, Enemy
-from weapon import IRON_SWORD
+from weapon import iron_sword
 import os
 import sys
 
 hero = Hero("Hero", 100)
-hero.equip(IRON_SWORD)
+hero.equip(iron_sword)
 # uncomment the below line to make the hero use fists
 # hero.drop()
 

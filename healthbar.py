@@ -19,10 +19,11 @@ class HealthBar:
     def __init__(self, entity, length=20, colored=True, color="") -> None:
         # attach to the entity whose health is displayed
         self.entity = entity
-        # total visual segments
-        self.length = length
-        # toggle color output
-        self.colored = colored
+
+        self.length = length # total visual segments
+
+        self.colored = colored # toggle color output
+
         # final color code selected from mapping
         self.color = self.colors.get(color, self.colors["default"])
 
@@ -31,7 +32,7 @@ class HealthBar:
         max_val = self.entity.max_hp
         cur_val = self.entity.hp
 
-        # compute filled and empty portions of the bar
+        # finding filled and empty portions of the bar
         remaining_bars = round(cur_val / max_val * self.length)
         lost_bars = self.length - remaining_bars
 
