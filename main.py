@@ -5,7 +5,7 @@ import sys
 
 hero = Hero("Hero", 100)
 hero.equip(iron_sword)
-# uncomment the below line to make the hero use fists
+# uncomment the line below to make the hero use fists
 # hero.drop()
 
 enemy = Enemy("Enemy", 100)
