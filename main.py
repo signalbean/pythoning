@@ -5,42 +5,47 @@ import sys
 
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
+
 def main():
     hero = Hero("Hero", 100)
     enemy = Enemy("Enemy", 100)
 
     hero.equip(iron_sword)
 
-    print("---- Choose weapon for hero ----\n1.Fists\n2.Iron Sword\n3.Short Bow")
+    print("---- Choose weapon for hero ----")
+    print("1. Fists\n2. Iron Sword\n3. Short Bow")
     choice = int(input("> "))
 
     if choice == 1:
         hero.drop()
-
     elif choice == 2:
         hero.equip(iron_sword)
-
     elif choice == 3:
         hero.equip(short_bow)
-
     else:
         print("Invalid choice, using default.")
 
     while True:
         clear_screen()
 
-        if hero.attack(enemy) or enemy.attack(hero):
+        hero.attack(enemy)
+        if enemy.has_fallen():
             break
-            
+
+        enemy.attack(hero)
+        if hero.has_fallen():
+            break
+
         hero.healthbar.draw()
         enemy.healthbar.draw()
-            
+
         print("\nPress Enter to fight or Ctrl+C to exit.")
-            
         try:
             input()
         except KeyboardInterrupt:
             print("\nExiting.")
             sys.exit(0)
-if __name__=='__main__':
+
+
+if __name__ == "__main__":
     main()
