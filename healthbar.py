@@ -1,5 +1,5 @@
 class HealthBar:
-    remaining = "#"
+    remaining = "[]"
     lost = "_"
     barrier = "|"
 
