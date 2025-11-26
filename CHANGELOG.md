@@ -1,12 +1,15 @@
 # 📝 Changelog
 
-_Last updated: November 26, 2025 at 06:36_
+_Last updated: November 26, 2025 at 14:56_
 
 ---
 
 
 ## 📅 2025-11-26
 
+- 🔀 **Merge pull request #4 from signalbean/fix/cross-platform-support-for-screen-clearing** `d300d04` _by Signal Bean_
+- 🔧 **Add unified clear_screen() helper** `0f1f78d` _by signalbean_
+- 📚 **docs: update changelog** `f3eebfd` _by signalbean_
 - 🔀 **Merge pull request #1 from signalbean/refactor/simplify-codebase** `a73e278` _by Signal Bean_
 - 📚 **docs: rename doc files and add changelog** `2b08e69` _by signalbean_
 
