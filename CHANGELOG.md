@@ -1,12 +1,21 @@
 # 📝 Changelog
 
-_Last updated: November 26, 2025 at 14:56_
+_Last updated: November 26, 2025 at 17:08_
 
 ---
 
 
 ## 📅 2025-11-26
 
+- 📚 **docs: add alignment for description and license** `e60d937` _by signalbean_
+- 🐛 **fix(code): fix placement for initial characters and set default weapon** `5d212d0` _by signalbean_
+- 📚 **docs: simplify readme and update based on new checks in the main file** `3938781` _by signalbean_
+- 🔀 **Merge pull request #6 from htmluser18/new-feature-branch** `0b6c3b2` _by Signal Bean_
+- 🔧 **Refactor weapon selection and input handling** `c7391a4` _by Signal Bean_
+- 👷 **ci: add issue templates and config files** `d28be73` _by signalbean_
+- 📚 **docs: fix license and update reference in readme file** `f9c6172` _by signalbean_
+- ✨ **feat : added weapon choice to hero** `231cbf8` _by htmluser18_
+- 📚 **docs: update changelog** `45ee371` _by signalbean_
 - 🔀 **Merge pull request #4 from signalbean/fix/cross-platform-support-for-screen-clearing** `d300d04` _by Signal Bean_
 - 🔧 **Add unified clear_screen() helper** `0f1f78d` _by signalbean_
 - 📚 **docs: update changelog** `f3eebfd` _by signalbean_
