@@ -1,12 +1,17 @@
 # 📝 Changelog
 
-_Last updated: November 26, 2025 at 17:08_
+_Last updated: November 26, 2025 at 18:55_
 
 ---
 
 
 ## 📅 2025-11-26
 
+- 🔀 **Merge pull request #8 from etaiami09-cmd/Death-Event** `ccc783e` _by Signal Bean_
+- 🔧 **Refactor weapon choice print statements and logic** `33bd6de` _by Signal Bean_
+- 🔧 **Refactor death check method and update messages** `b971c04` _by Signal Bean_
+- 🔧 **added death event** `15986ed` _by Magshimim_AI_
+- 📚 **docs: update changelog** `04ab6a0` _by signalbean_
 - 📚 **docs: add alignment for description and license** `e60d937` _by signalbean_
 - 🐛 **fix(code): fix placement for initial characters and set default weapon** `5d212d0` _by signalbean_
 - 📚 **docs: simplify readme and update based on new checks in the main file** `3938781` _by signalbean_
