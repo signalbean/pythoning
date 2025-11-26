@@ -5,26 +5,21 @@ import sys
 
 hero = Hero("Hero", 100)
 hero.equip(iron_sword)
-# uncomment the line below to make the hero use fists
-# hero.drop()
-
 enemy = Enemy("Enemy", 100)
 
 while True:
-    os.system("clear") # or 'cls' instead of 'clear' on Windows
-
-    hero.attack(enemy) # attack loop starts with hero
-
-    enemy.attack(hero) # enemy immediately counter-attacks
-
-    # redraw updated healthbars after each exchange
+    os.system("clear")
+        
+    hero.attack(enemy)
+    enemy.attack(hero)
+        
     hero.healthbar.draw()
     enemy.healthbar.draw()
-
-    print("\nPress Enter key to fight or Ctrl+C to exit.")
-
+        
+    print("\nPress Enter to fight or Ctrl+C to exit.")
+        
     try:
         input()
     except KeyboardInterrupt:
-        print("\nSIGINT received. Exiting.")
+        print("\nExiting.")
         sys.exit(0)

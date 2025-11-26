@@ -1,37 +1,28 @@
-from weapon import fists
+from weapon import fists, Weapon
 from healthbar import HealthBar
 
 class Character:
-    def __init__(self, name: str, hp: int, weapon=fists) -> None:
-        # basic shared fields for all character types
+    def __init__(self, name: str, hp: int) -> None:
         self.name = name
         self.hp = hp
         self.max_hp = hp
-        # starting weapon, default is fists
-        self.weapon = weapon
+        self.weapon = fists
 
-    def attack(self, target) -> None:
-        # simple damage application with floor at zero
+    def attack(self, target: "Character") -> None:
         target.hp = max(target.hp - self.weapon.dmg, 0)
 
 class Hero(Character):
-    def __init__(self, name: str, hp: int, weapon=fists) -> None:
-        super().__init__(name, hp, weapon)
-        # store original weapon so drop() can revert to it
-        self.default_weapon = weapon
-        # hero healthbar uses green
+    def __init__(self, name: str, hp: int) -> None:
+        super().__init__(name, hp)
         self.healthbar = HealthBar(self, color="green")
 
-    def equip(self, weapon) -> None:
-
-        self.weapon = weapon # change current weapon
+    def equip(self, weapon: Weapon) -> None:
+        self.weapon = weapon
 
     def drop(self) -> None:
-
-        self.weapon = self.default_weapon # go back to default weapon
+        self.weapon = fists
 
 class Enemy(Character):
-    def __init__(self, name: str, hp: int, weapon=fists) -> None:
-        super().__init__(name, hp, weapon)
-        # enemy healthbar marked in red
+    def __init__(self, name: str, hp: int) -> None:
+        super().__init__(name, hp)
         self.healthbar = HealthBar(self, color="red")
