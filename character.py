@@ -11,13 +11,13 @@ class Character:
     def has_fallen(self) -> bool:
         return self.hp <= 0
 
-    def die(self) -> None:
+    def rip(self) -> None:
         print(f"{self.__class__.__name__} has fallen!")
 
     def attack(self, target: "Character") -> bool:
         target.hp = max(target.hp - self.weapon.dmg, 0)
         if target.has_fallen():
-            target.die()
+            target.rip()
             return True
         return False
 
