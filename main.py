@@ -14,16 +14,20 @@ def main():
 
     print("---- Choose weapon for hero ----")
     print("1. Fists\n2. Iron Sword\n3. Short Bow")
-    choice = int(input("> "))
 
-    if choice == 1:
-        hero.drop()
-    elif choice == 2:
-        hero.equip(iron_sword)
-    elif choice == 3:
-        hero.equip(short_bow)
-    else:
-        print("Invalid choice, using default.")
+    try:
+        choice = int(input("> "))
+
+        if choice == 1:
+            hero.drop()
+        elif choice == 2:
+            hero.equip(iron_sword)
+        elif choice == 3:
+            hero.equip(short_bow)
+        else:
+            print("Invalid choice, using default.")
+    except ValueError:
+        print("Not a valid number, try again.")
 
     while True:
         clear_screen()
@@ -45,7 +49,6 @@ def main():
         except KeyboardInterrupt:
             print("\nExiting.")
             sys.exit(0)
-
 
 if __name__ == "__main__":
     main()
