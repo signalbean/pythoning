@@ -1,12 +1,18 @@
 # 📝 Changelog
 
-_Last updated: November 26, 2025 at 05:12_
+_Last updated: November 26, 2025 at 06:36_
 
 ---
 
 
+## 📅 2025-11-26
+
+- 🔀 **Merge pull request #1 from signalbean/refactor/simplify-codebase** `a73e278` _by Signal Bean_
+- 📚 **docs: rename doc files and add changelog** `2b08e69` _by signalbean_
+
 ## 📅 2025-11-22
 
+- ♻️ **refactor: simplify and clean up codebase** `09bcddb` _by signalbean_
 - 🐛 **fix(style): change wo in main** `2bf2ac3` _by signalbean_
 
 ## 📅 2025-11-21
