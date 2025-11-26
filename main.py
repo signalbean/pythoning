@@ -1,5 +1,5 @@
 from character import Hero, Enemy
-from weapon import iron_sword, short_bow
+from weapon import iron_sword, short_bow, war_hammer
 import os
 import sys
 
@@ -13,7 +13,7 @@ def main():
     hero.equip(iron_sword)
 
     print("---- Choose weapon for hero ----")
-    print("1. Fists\n2. Iron Sword\n3. Short Bow")
+    print("1. Fists\n2. Iron Sword\n3. Short Bow\n4. War Hammer")
 
     try:
         choice = int(input("> "))
@@ -24,6 +24,8 @@ def main():
             hero.equip(iron_sword)
         elif choice == 3:
             hero.equip(short_bow)
+        elif choice == 4:
+            hero.equip(war_hammer)
         else:
             print("Invalid choice, using default.")
     except ValueError:

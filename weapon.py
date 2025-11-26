@@ -6,3 +6,4 @@ class Weapon:
 fists = Weapon("Fists", 2)
 iron_sword = Weapon("Iron Sword", 5)
 short_bow = Weapon("Short Bow", 4)
+war_hammer = Weapon("War Hammer", 7)
