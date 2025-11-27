@@ -1,12 +1,23 @@
 # 📝 Changelog
 
-_Last updated: November 26, 2025 at 19:24_
+_Last updated: November 27, 2025 at 07:09_
 
 ---
 
 
+## 📅 2025-11-27
+
+- 🔧 **Refactor weapon selection and add new weapons (#10)** `10e039b` _by Signal Bean_
+- 🔧 **Rename WEAPON_CHOICES to WEAPONS** `a5652d6` _by Signal Bean_
+- 🔧 **Refactor weapon selection into choose_weapon function** `d767207` _by Signal Bean_
+- 💎 **style(code): add more colors for healthbar** `600d997` _by signalbean_
+
 ## 📅 2025-11-26
 
+- 🔧 **update weapon choices and update weapon selection** `d0e2fd5` _by Alanxwww_
+- 🔧 **Add new weapons and clean up selection logic** `5765b66` _by Alanxwww_
+- ♻️ **refactor: rename method to rip** `8137b1c` _by signalbean_
+- 📚 **docs: update changelog** `99678fa` _by signalbean_
 - 🐛 **fix: exit loop on invalid input** `60dbe79` _by signalbean_
 - 🐛 **fix: handle non-numeric input in weapon selection** `bacb251` _by signalbean_
 - 🔧 **uh** `3be35cd` _by signalbean_
