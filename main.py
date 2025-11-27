@@ -1,34 +1,28 @@
 from character import Hero, Enemy
-from weapon import iron_sword, short_bow
+from weapon import WEAPONS
 import os
 import sys
 
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
+def choose_weapon():
+    print("---- Choose weapon for hero ----")
+    for idx, weapon in enumerate(WEAPONS, start=1):
+        print(f"{idx}. {getattr(weapon, 'name', str(weapon))}")
+
+    try:
+        choice = int(input("> "))
+        return WEAPONS[choice - 1]
+    except (ValueError, IndexError):
+        print("Invalid choice, using default.")
+        return WEAPONS[0]
+
 def main():
     hero = Hero("Hero", 100)
     enemy = Enemy("Enemy", 100)
 
-    hero.equip(iron_sword)
-
-    print("---- Choose weapon for hero ----")
-    print("1. Fists\n2. Iron Sword\n3. Short Bow")
-
-    try:
-        choice = int(input("> "))
-
-        if choice == 1:
-            hero.drop()
-        elif choice == 2:
-            hero.equip(iron_sword)
-        elif choice == 3:
-            hero.equip(short_bow)
-        else:
-            print("Invalid choice, using default.")
-    except ValueError:
-        print("Not a valid number.")
-        sys.exit(1)
+    hero.equip(choose_weapon())
 
     while True:
         clear_screen()
@@ -53,3 +47,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
