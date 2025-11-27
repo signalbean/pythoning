@@ -8,8 +8,7 @@ iron_sword = Weapon("Iron Sword", 5)
 short_bow = Weapon("Short Bow", 4)
 war_hammer = Weapon("War Hammer", 7)
 
-WEAPON_CHOICES = [
-    fists,
+WEAPONS = [
     iron_sword,
     short_bow,
     war_hammer
