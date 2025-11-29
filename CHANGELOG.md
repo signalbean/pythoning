@@ -1,12 +1,19 @@
 # 📝 Changelog
 
-_Last updated: November 27, 2025 at 07:09_
+_Last updated: November 29, 2025 at 16:16_
 
 ---
 
 
+## 📅 2025-11-29
+
+- 👷 **ci: update pr template and replace issue templates** `200f474` _by signalbean_
+- 📚 **docs: add contrib file** `e49483e` _by signalbean_
+- 💎 **style: change bar symbol** `c9b5052` _by signalbean_
+
 ## 📅 2025-11-27
 
+- 📚 **docs: update changelog** `7f381f2` _by signalbean_
 - 🔧 **Refactor weapon selection and add new weapons (#10)** `10e039b` _by Signal Bean_
 - 🔧 **Rename WEAPON_CHOICES to WEAPONS** `a5652d6` _by Signal Bean_
 - 🔧 **Refactor weapon selection into choose_weapon function** `d767207` _by Signal Bean_
