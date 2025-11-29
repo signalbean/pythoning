@@ -1,6 +1,6 @@
 name: Bug Report
 description: Is something wrong? Let us know.
-type: bug
+labels: ["bug"]
 body:
   - type: textarea
     id: description
@@ -13,10 +13,10 @@ body:
     id: version
     attributes:
       label: Version
-      description: "Ex. `v1.2.3` / `main` / `Commit 1a2b3c`"
+      description: "Ex. v1.2.3 / main / Commit 1a2b3c"
 
   - type: input
     id: os
     attributes:
       label: Environment
-      description: OS / Emulator / Multiplexer / etc.
+      description: "OS / Emulator / Multiplexer / etc."
