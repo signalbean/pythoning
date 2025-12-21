@@ -28,15 +28,15 @@ def main():
         clear_screen()
 
         hero.attack(enemy)
-        if enemy.has_fallen():
-            break
-
         enemy.attack(hero)
-        if hero.has_fallen():
-            break
 
         hero.healthbar.draw()
         enemy.healthbar.draw()
+
+        if enemy.has_fallen() or hero.has_fallen():
+            import time
+            time.sleep(2)
+            break
 
         print("\nPress Enter to fight or Ctrl+C to exit.")
         try:
@@ -47,4 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
