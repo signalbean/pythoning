@@ -1,12 +1,23 @@
 # 📝 Changelog
 
-_Last updated: November 29, 2025 at 16:16_
+_Last updated: December 21, 2025 at 18:19_
 
 ---
 
 
+## 📅 2025-12-21
+
+- 🔧 **Fix healthbar before exit (#12)** `19a544a` _by Signal Bean_
+- 🔧 **Fix #11: Show healthbars before exit with 2s pause** `a12eaaa` _by signalbean_
+
+## 📅 2025-12-16
+
+- 🔧 **spacing** `5d97729` _by signalbean_
+
 ## 📅 2025-11-29
 
+- 🐛 **fix(ci): replace type with label** `3e7ef08` _by signalbean_
+- 📚 **docs: update changelog** `139e874` _by signalbean_
 - 👷 **ci: update pr template and replace issue templates** `200f474` _by signalbean_
 - 📚 **docs: add contrib file** `e49483e` _by signalbean_
 - 💎 **style: change bar symbol** `c9b5052` _by signalbean_
